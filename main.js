@@ -10,7 +10,9 @@ const bot = new Telegraf(token);
 
 bot.command('start', async ctx => {
   const message = await ctx.reply(
-    'Welcome! Let me help you get started with the app. Click the button below to begin.',
+    `Welcome!
+    You're on the platform for organizing esports tournaments, always at your fingertips.
+    Click the button below to get started.`,
     Markup.inlineKeyboard([Markup.button.webApp('Launch the app', webkitURL)])
   );
 
